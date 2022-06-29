@@ -1,0 +1,75 @@
+Derek Powell
+Final Capstone 3 model
+
+SVM.LinearSVC
+svm.LinearSVC(random_state=123, C=1, loss='squared_hinge')
+                                                                          precision    recall  f1-score   support
+
+                           z_Aloha Manager / CFC,Employees,Configuration       0.67      0.70      0.68        20
+                              z_Aloha POS,CTLSVR/Control Service,Stopped       0.88      0.97      0.92        31
+               z_Aloha POS,End Of Day,Waiting for End Of Day to Complete       1.00      0.94      0.97        18
+                          z_Aloha POS,Front Of House,Can't assign drawer       0.60      0.86      0.71         7
+                               z_Aloha POS,Front Of House,Checkout issue       0.54      0.81      0.65        16
+                    z_Aloha POS,Front Of House,Clock In/Clock Out issues       0.72      0.65      0.68        20
+                           z_Aloha POS,Front Of House,Enroll fingerprint       0.64      0.64      0.64        11
+                             z_Aloha POS,Front Of House,Missing employee       0.90      0.90      0.90       119
+                                  z_Aloha POS,Front Of House,Order Entry       0.43      0.25      0.32        12
+                                          z_Aloha POS,Menu,Configuration       0.67      0.33      0.44         6
+                                         z_Aloha POS,Price,Configuration       0.75      1.00      0.86         6
+                     z_Aloha POS,Site/Store Down,Determining File Server       0.77      0.88      0.82        96
+                       z_Aloha POS,Terminal Down,Determining File Server       0.93      0.70      0.80        56
+                  z_Aloha Payment Solution,D\ No response,Front Of House       1.00      0.75      0.86         8
+                  z_Aloha Payment Solution,Service Back Of House,Stopped       1.00      0.89      0.94         9
+                              z_Aloha Takeout,Front Of House,Order Entry       0.67      0.53      0.59        15
+               z_Aloha Takeout,Front Of House,Redundancy / No Connection       0.96      0.97      0.97        73
+                                     z_Cash Drawer,Won't Open,HW Failure       0.84      0.95      0.89        22
+                  z_Electronic Draft Capture,Back Of House,Configuration       0.97      0.90      0.93        31
+                         z_Electronic Draft Capture,Back Of House,Refund       0.83      0.83      0.83         6
+z_Electronic Draft Capture,Front Of House,Unable to Process Credit Cards       0.89      0.86      0.88        37
+          z_Electronic Draft Capture,Settlement,Unable to Settle Batches       1.00      1.00      1.00         9
+    z_Electronic Draft Capture,Spooldown/Offline Mode,Processing Offline       0.81      0.93      0.87        14
+                                     z_File Server,Power,Unable to Start       0.29      0.22      0.25         9
+                                   z_File Server,Windows,Unable To Login       0.79      0.71      0.75        21
+                           z_Fingerprint Scanner,Scanner,Not Recognizing       0.68      0.68      0.68        25
+                                        z_GoLive,New Install,New Install       1.00      1.00      1.00         6
+                                            z_Hosted - Pulse,Pulse,Pulse       1.00      1.00      1.00        10
+                                     z_NCR Back Office,Database,Database       0.76      0.74      0.75        72
+                                   z_NCR Back Office,Inventory,Inventory       0.84      0.82      0.83        44
+                                       z_NCR Back Office,Invoice,Invoice       0.86      0.81      0.83        52
+                                           z_NCR Back Office,Labor,Labor       0.82      0.79      0.80       109
+                                           z_NCR Back Office,Login,Login       0.81      0.94      0.87        64
+                         z_NCR Back Office,New Install,Outstanding Issue       0.75      0.55      0.63        11
+                                           z_NCR Back Office,Sales,Sales       0.91      0.92      0.92       119
+                                     z_NCR Back Office,Workflow,Workflow       0.64      0.50      0.56        18
+                         z_Other Peripherals,BOH Printer,Unable To Print       0.88      0.94      0.91        16
+                                z_Other Peripherals,Keyboard,Not Working       0.83      0.83      0.83         6
+                                 z_Other Peripherals,Monitor,Not Working       0.90      0.90      0.90        10
+                 z_Other Peripherals,Other Peripherals,Other Peripherals       0.75      0.30      0.43        10
+     z_Other,Non-Support related questions,Non-Support related questions       0.60      0.56      0.58        16
+                          z_PinPad / CC Machine,Display,Incorrect Screen       0.86      0.90      0.88        48
+                             z_PinPad / CC Machine,Won't Read,HW Failure       0.77      0.77      0.77        26
+                                        z_Printer,Faded Print,HW Failure       0.33      0.08      0.13        12
+                                         z_Printer,Failure,Configuration       1.00      0.17      0.29         6
+                                                   z_Printer,Other,Other       0.72      0.79      0.75        56
+                                              z_Printer,Power,HW Failure       0.33      0.12      0.18         8
+                                        z_Printer,Won't Print,HW Failure       0.78      0.92      0.84        97
+                            z_Remote Application Loader,Failure,Terminal       0.79      0.75      0.77        20
+          z_Remote Application Loader,Terminal Down,Communication Issues       0.60      0.50      0.55        12
+                                            z_Server,No Power,HW Failure       0.20      0.08      0.12        12
+                                             z_Server,Offline,HW Failure       0.66      0.45      0.54        42
+                                        z_Terminal,Communication,Network       0.12      0.17      0.14         6
+                                           z_Terminal,Offline,HW Failure       0.55      0.74      0.63        31
+                                             z_Terminal,Power,HW Failure       0.00      0.00      0.00         5
+                                     z_Terminal,Power,Randomly Shuts Off       0.00      0.00      0.00         8
+                                        z_Terminal,Power,Unable to Start       0.52      0.54      0.53        41
+                                      z_Terminal,Reboot Loop,Reboot Loop       0.50      0.38      0.43         8
+                                  z_Terminal,Slow / Lagging,Slow/Lagging       0.69      0.48      0.56        23
+                                   z_Terminal,Time / Date,Time Incorrect       1.00      0.60      0.75         5
+                                                z_Terminal,Windows,Other       0.57      0.79      0.67        39
+       z_Third Party,Internet Service Provider,Internet Service Provider       0.81      0.95      0.88        87
+           z_Third Party,Third Party Integration,Third Party Integration       0.77      0.75      0.76        32
+     z_Third Party,Third Party SW Not Working,Third Party SW Not Working       0.91      0.97      0.94       172
+
+                                                                accuracy                           0.80      2056
+                                                               macro avg       0.72      0.68      0.68      2056
+                                                            weighted avg       0.79      0.80      0.79      2056
