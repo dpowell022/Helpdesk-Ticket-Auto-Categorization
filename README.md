@@ -32,16 +32,15 @@ This project sought to create a machine learning model which can evaluate featur
 ***
  - Added feature to define whether a ticket was resolved by 'Tier1' or 'Tier2'
  - Vectorized freeform text into a word corpus, applying 1-3 word n-grams for contextual value add
- - Split data into 75/25 split
+ - Split data into 75/25 parts for training and testing
  
 ***
 ### Modeling
 ***
-I ran my training data through 4 models out of the box to benchmark initial scores: random forest, gradient boosting, logistic regression, and SVM linear SVC. My model choices were partially dictated by multi-class support and partially by my limited computational resources. Of those 4 models, grad boost failed to complete training after 2 hours and I abandoned it, and logistic regression AND SVM failed to converge. 
-
-I then tried training the models again, once using ONLY the vocabulary features, and once using ONLY the NON-vocabulary features. In all cases, the models trained with only the vocabulary features outperformed all others. SVM Linear SVC performed the best. 
-
-Taking, then, the best-performing model, I performed hyperparameter tuning using HalvingGridSearch (limited computational cost) and found the out-of-the-box params performed best.
+ - Focused on 4 models: Random Forest, Gradient Boosting, Logistic Regression, LinearSVC
+ - Trained each model both the vocabulary and categorical variables, only the vocabulary, and only the categorical variables
+ - LinearSVC with only the vocabulary as training data performed the best
+ - Performed HalvingGridSearch hyper param tuning on LinearSVC, resulted in out-of-the-box params as best-performing
 
 ***
 ### Conclusions and future scope
