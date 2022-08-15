@@ -20,15 +20,20 @@ This project sought to create a machine learning model which can evaluate featur
 ***
 ### Acquiring and cleaning the data
 ***
-Source data was taken from real tickets logged by helpdesk agents and reported by customers. A data extract was pulled from an internal server and cleaning began. The dataset I worked with was laden with features, representing each field found within a ticket, including discrete variables, continuous variables, and date/time objects. I had to drop unnecessary features, impute or drop missing values where applicable, and curb outliers where appropriate to preserve model training integrity. I also cleaned the text fields to lowercase all words and drop special characters.
-
-My target variable was the multi-class categorical variable for 'product category'. I merged this multi-tiered categorical variable into a single multi-class variable, giving me over 100 target classes. I reduced this a bit by dropping any classes which had less than 25 instances in the dataset, but the task would still involve predicting correctly from over 70 classes.
+ - Data taken from real tickets logged by customers
+ - Dropped features from the dataset deemed irrelevant to machine learning
+ - Used domain knowledge to impute values or drop rows where missing values existed
+ - Curbed outliers, where appropriate for the business problem
+ - Clean text fields of special characters, stop words, and move to lowercase
+ - Convert target variables into a single categorical feature with over 70 classes
 
 ***
 ### Feature engineering and Pre-processing
 ***
-I added several new features based on information from existing features, such as breaking out the 'Team group' (or responsible party of helpdesk agents who fixed the issue) into a Tier1 and Tier2 category, as well as running the word corpus through a TF-IDF vectorizer, also applying 2 and 3 n-grams to generate better contextual value, and dropping n-grams that appeared less than 10 times. I finished pre-processing with a 75/25 split of training/test data.
-
+ - Added feature to define whether a ticket was resolved by 'Tier1' or 'Tier2'
+ - Vectorized freeform text into a word corpus, applying 1-3 word n-grams for contextual value add
+ - Split data into 75/25 split
+ 
 ***
 ### Modeling
 ***
