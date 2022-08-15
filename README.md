@@ -1,5 +1,8 @@
 # Helpdesk-Ticket-Auto-Categorization
 
+Full notebook available [here](https://github.com/dpowell022/Helpdesk-Ticket-Auto-Categorization/blob/main/Helpdesk%20Ticket%20Classifier.ipynb)
+Detailed project report available [here](https://github.com/dpowell022/Helpdesk-Ticket-Auto-Categorization/blob/main/Capstone%203%20-%20Project%20Report.docx)
+High-level presentation [here](https://github.com/dpowell022/Helpdesk-Ticket-Auto-Categorization/blob/main/Capstone%203%20-%20Presentation.pptx)
 ***
 ### Business problem: 
 ***
